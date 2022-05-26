@@ -36,18 +36,19 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rails-controller-testing', '1.0.2'
+  gem 'minitest-reporters', '1.1.14'
+  gem 'guard'
+  gem 'guard-minitest', '2.4.4'
+
+  # gem 'rspec-rails', '~> 3.6.0'
+  # gem 'capybara', '~> 2.13'
+  # Adds support for Capybara system testing and selenium driver
+  gem 'selenium-webdriver'
+  gem 'rb-readline'
 end
 
 group :test do
-  gem 'rails-controller-testing', '1.0.2'
-  gem 'minitest-reporters'
-  gem 'guard'
-  gem 'guard-minitest'
-
-  gem 'rspec-rails', '~> 3.6.0'
-  gem 'capybara', '~> 2.13'
-  # Adds support for Capybara system testing and selenium driver
-  gem 'selenium-webdriver'
 end
 
 group :development do
